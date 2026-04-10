@@ -1,0 +1,100 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: #f0f2f5;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-container {
+   perspective: 1000px;
+}
+
+.card {
+   width: 380px;
+   background: rgb(208, 216, 203);
+   border-radius: 15px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+   transition: transform 0.3s;
+   border: 2px solid #333;
+   padding: 20px;
+}
+
+.card:hover {
+   transform: translateY(-10px);
+}
+
+.header {
+   background-color: #003580;
+   /* STU 느낌의 딥블루 */
+   height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #ffd700;
+   /* 골드 포인트 */
+   font-weight: bold;
+   font-size: 1.5rem;
+}
+
+.info {
+   padding: 30px;
+   text-align: center;
+}
+
+h1 {
+   margin: 0;
+   font-size: 1.6rem;
+   color: #333;
+}
+
+.title {
+   color: #003580;
+   font-weight: 600;
+   margin-top: 5px;
+   margin-bottom: 20px;
+}
+
+.contact-details {
+   text-align: left;
+   font-size: 0.9rem;
+   color: #666;
+   border-top: 1px solid #eee;
+   padding-top: 15px;
+}
+
+.footer {
+   margin-right: 15px;
+   display: flex;
+   justify-content: space-around;
+   padding: 15px;
+   background: #f9f9f9;
+}
+
+.footer a {
+   margin-right: 15px;
+   text-decoration: none;
+   color: #00804fa1;
+   font-weight: bold;
+   font-size: 0.85rem;
+   transition: color 0.2s;
+}
+
+.footer a:hover {
+   margin-right: 15px;
+   color: #ffd700;
+}
+
+h1,
+p {
+   margin-top: 0;
+   margin-bottom: 20px;
+}
